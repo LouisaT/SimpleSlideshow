@@ -8,14 +8,59 @@
     padding: 3vh 3vw;
     margin: 5vh auto;
     display: flex;
-    flex-flow: row nowrap;
+    /* flex-flow: row nowrap;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
     position: relative;
 }
 
-.cont {
-    padding: 10px;
-    margin: 10px;
+.content {
+    padding: 1vh;
+    margin: 1vh;
     border: 1px solid gainsboro;
+    display: none;
 }
+
+.content img {height: 75.5vh;}
+
+.zurueck, .weiter {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: floralwhite;
+    font-weight: bold;
+    font-size: 48px;
+    transition: .6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.weiter {  
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* fading animation */
+
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }      
+  
+  @keyframes fade {     
+    from {opacity: .4}     
+    to {opacity: 1}
+  }
+  
+

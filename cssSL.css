@@ -1,0 +1,21 @@
+.wrap {
+    border: 1px solid rgb(179, 179, 179);
+    border-radius: 5px;
+    box-shadow: 1vw 1vh 3vw #999;
+    background-color: antiquewhite;
+    width: 80vw;
+    height: 80vh;
+    padding: 3vh 3vw;
+    margin: 5vh auto;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.cont {
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid gainsboro;
+}
